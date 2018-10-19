@@ -94,13 +94,19 @@ Printing strings is easy, but other operations are slightly more complex. Thankf
 ```C
 strpy(first, second);
 ```
-
+#### `strncpy`
+It copies n number of characters from one string to another
+strncpy(Target,Source,3)
+It copies first 3 characters from source string to Target String.
 #### Concatenate: `strcat`
 `strcat` (from 'string concatenate') will concatenate a string, meaning it will take the contents of one string and place it on the end of another string. In this example, the contents of `second` will be concatenated onto `first`:
 ```C
 strcat(first, second);
 ```
-
+#### `strncat`
+It works same as strncpy but it concates at the end of the target string
+strncat(Target,Source,3)
+It concates first 3 characters from source string to Target String.
 #### Get length: `strlen`
 `strlen` (from 'string length') will return an integer value corresponding to the length of the string. In this example, an integer called `string_length` will be assigned the length of `my_string`:
 ```C
