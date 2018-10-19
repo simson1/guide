@@ -112,6 +112,12 @@ void copy_string(char [] first_string, char [] second_string)
         first_string[i] = second_string[i]; 
     } 
 } 
+#### Copy N number of characters from one string to another `strncpy`
+`strncpy` function copies a specified number of characters to another string
+char source[]="SourceString";
+char target[];
+strncpy(target string,source string,n number of characters)
+strncpy(string,string,int)
 
 #### Concatenate: `strcat`
 `strcat` (from 'string concatenate') will concatenate a string, meaning it will take the contents of one string and place it on the end of another string. In this example, the contents of `second` will be concatenated onto `first`:
@@ -128,6 +134,10 @@ void string_concatenate(char [] s1, char [] s2)
         s1[i] = s2[j];
     }
 }
+#### Concat N number of characters from one string to another `strncat`
+This function works same as strncpy 
+strncat ( TargetString,SourceString, 3 );
+So first 3 characters of source string is concated at the end of TargetString
 
 #### Get length: `strlen`
 `strlen` (from 'string length') will return an integer value corresponding to the length of the string. In this example, an integer called `string_length` will be assigned the length of `my_string`:
@@ -161,6 +171,8 @@ Notice the `!`, which is needed because this function returns 0 if they are the 
 ```C
 char *strtok(char *str, const char *delim);
 ```
+
+
 
 # Before you go on...
 ## A Review
